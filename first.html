@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First_Project</title>
+    <style>
+        ::placeholder{
+            color: red;
+        }
+        #user_info{
+            border-top: 5px dotted blue; 
+            border: 5px double blue;
+            background-color:rgba(180, 100, 155, 0.4);
+        }
+        #name{
+            background-color:limegreen;
+        }
+        #username{
+            background-color:skyblue;
+        }
+        #password{
+            background-color: springgreen;
+        }
+        #user_characteristic{
+            border: 5px double blue;
+            background-color:rgba(200, 100, 105, 0.7);
+        }
+        #birth_date{
+            background-color: papayawhip;
+        }
+        #file {
+            background-color:seagreen;
+        }
+        #about_you{
+            border-top: ;
+        }
+    </style>
+</head>
+<body>
+    <form action="result.html">
+
+        h1 style="color: maroon;">Welcome To My Frist Projects</h1>
+        <div id="user_info">
+            <h1 style="color: blue;">User Info : </h1>
+            <label for="name">Write your name</label>
+            <input type="text" name="name" id="name" placeholder= "Write your name ..." >
+            <br />
+            <label for="username">Write your username</label>
+            <input type="text" name="username" id="username"  placeholder="Write your username ..">
+            <br />
+            <label for="password">Write your password</label>
+            <input type="text" name="password" id="password"  placeholder="Write your password ...">
+            <br />
+            <label for="e-mail">Write your e-mail addres</label>
+            <input type="email" name="e-mail" id="e-mail" style="background-color:pink;" placeholder="example@example.com"  required>
+            <br>
+            <label for="share">Do you give a permission to share your information</label>
+            <input type="button" value="Yes" style="background-color: seagreen;">
+            <input type="button" value="Hell No" style="background-color:rgba(200, 50, 75, 0.7);">
+            <br>
+            <label for="file">Profile Picture</label>
+            <input type="file" name="file" id="file" multiple style="background-color: steelblue;">
+        </div>
+        <div id="user_characteristic">
+            <h1 style="color:royalblue;">User Personel characteristics </h1>
+            <label for="gender1" style="color: blue;">Man</label>
+            <input type="radio" name="gender" id="gender1" value="gender">
+            <label for="gender2" style="color: red;">Woman</label>
+            <input type="radio" name="gender" id="gender2" value="gender">
+            <label for="gender3" style="background-color:seagreen;">None</label>
+            <input type="radio" name="gender" id="gender3" value="gender">
+            <br>
+            <br>
+            <label for="birth_date">Please choose your birthday</label>
+            <input type="date" name="birth_date" id="birth_date" required>
+            <br>
+            <h3>Favourite Singer</h3>
+            <label for="Baba">Müslüm Gürses</label>
+            <img src="./images/baba.jfif" alt="Müslüm baba" width="30px">
+            <input type="checkbox" name="Baba" id="singer1" value="Müslüm Gürses" > 
+            <label for="Ferdi">Ferdi Tayfur</label>
+            <img src="./images/ferdi.jfif" alt="Müslüm baba" width="50px">
+            <input type="checkbox" name="Ferdi" id="singer2" value="Ferdi" > 
+            <br>
+            <label for="color">Choose your favourite color</label>
+            <input type="color" name="color" id="color" >
+        </div>
+        
+        <input type="reset">
+        <input type="submit" >
+        
+            
+    </form>
+
+</body>
+</html>
